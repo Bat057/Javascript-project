@@ -26,12 +26,12 @@
 <main>
     <section id="login">
 	    <h1 class="login-title">Log In</h1>
-        <p class="error">Erreur dans l’identifiant ou le mot de passe</p>
-        <form class="login">
+        <p class="error"></p>
+        <form novalidate class="login">
             <label for="email">E-mail</label>
-            <input type="text" name="email" id="email" required>
+            <input type="email" name="email" id="email" required>
             <label for="psw">Mot de passe</label>
-            <input type="password" name="psw" id="pws" required>
+            <input type="password" name="psw" id="psw" required>
             <input type="submit" class="submit" value=" Se connecter">
             <p><a href="#">Mot de passe oublié</a></p>
         </form>

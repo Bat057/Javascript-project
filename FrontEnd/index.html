@@ -7,21 +7,28 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
 	<script type="module" src="works.js"></script>
 </head>
 <body>
 <header>
+	<div class="edition edit hidden">Mode édition</div>
+	<div class="header">
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
 		<ul>
 			<li>projets</li>
 			<li>contact</li>
-			<li><a href="login.html">login</a> </li>
+			<li class="login" ><a href="login.html">login</a> </li>
+			<li class="logout edit hidden">logout</li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
+	</div>
 </header>
 <main>
 	<section id="introduction">
@@ -36,9 +43,16 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<h2 id="projetsTitle">Mes Projets<button class="modifier edit hidden"><i class="fa-regular fa-pen-to-square projet-icon edit hidden"></i>modifier</button></h2>
 		<div class="gallery">
-			
+			<dialog class="modal">
+				<h3>Galerie photo</h3>
+				<div class="galleryModal">
+				</div>
+				<form>
+					<button method="dialog" class="btnModal">Ajouter une photo</button>
+				</form>
+			  </dialog>
 		</div>
 	</section>
 	<section id="contact">

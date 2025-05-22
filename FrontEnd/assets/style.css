@@ -53,7 +53,7 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 0
@@ -169,7 +169,7 @@ margin: auto;
 	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
 }
 
-input[type="submit"]{
+.btnModal, input[type="submit"]{
 	font-family: 'Syne';
 	font-weight: 700;
 	color: white;
@@ -226,6 +226,77 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
+
+.edition{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 59px;
+	background-color: black;
+	color: white;	
+}
+
+.hidden{
+	display: none;
+}
+
+.projet-icon{
+	color: black;
+	font-size: 16px;
+	padding-right: 10px;
+	justify-self:right;
+}
+
+.modifier{
+	color: black;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Work Sans";
+	justify-items: end;
+	border: none;
+	background-color: inherit;
+}
+
+#portfolio h2{
+	display: flex;
+	justify-self: center;
+	gap:25px;
+	align-items: center;
+}
+
+.btnModal{
+	border:none;
+	margin: 0;
+	padding: 0;
+}
+
+.galleryModal{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #B3B3B3;
+}
+.galleryModal img{
+	max-width: 77px;
+	max-height: 103px;
+	margin-bottom: 25px;
+	
+}
+
+dialog:open{
+	padding: 40px 90px 40px 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border:none;
+	border-radius: 10px;
+	width: 450px;
+	height: 608px;
+}
+
+
 
 
 
