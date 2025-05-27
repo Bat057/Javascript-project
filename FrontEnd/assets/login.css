@@ -132,8 +132,7 @@ main form {
 	flex-direction: column;
 }
 
-.login input {
-    
+.login input { 
 	height: 50px;
 	font-size: 16px;
 	border: none;
@@ -141,6 +140,7 @@ main form {
     
 
 }
+
 .login label {
     font-family: "Work Sans";
 	margin: 2em 0 1em 0;
@@ -149,11 +149,15 @@ main form {
 #login {
     width: 379px;
     margin: auto;
+	display: flex;
+	flex-direction: column;
 }
+
 #login p{
     align-self: center;
     margin-top: 20px;
 }
+
 #login a{
     color: #3D3D3D;
 }

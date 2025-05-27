@@ -268,32 +268,80 @@ a{
 	border:none;
 	margin: 0;
 	padding: 0;
+	height: 36px;
+	width: 237px;
+	margin-bottom: 35px;
 }
 
 .galleryModal{
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-bottom: 50px;
 	border-bottom: 1px solid #B3B3B3;
+	gap: 15px;
 }
-.galleryModal img{
+.galleryModal div{
 	max-width: 77px;
 	max-height: 103px;
 	margin-bottom: 25px;
-	
+	position: relative;
 }
 
+.galleryModal img{
+	display: block;
+}
+
+.galleryModal i{
+	position: absolute;
+	top:0;
+	right:0;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: white;
+	background-color: black;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	border-radius: 3px;
+}
+
+
+
 dialog:open{
-	padding: 40px 90px 40px 90px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
 	border:none;
 	border-radius: 10px;
-	width: 450px;
-	height: 608px;
+	max-width: 630px;
+	max-height: 688px;
+	padding: 0;
+}
+
+.modalDiv{
+	display:flex;
+	flex-direction: column;
+	gap:35px;
+	align-items: center;
+	height: 100%;
+	padding: 20px 80px 0px 80px;
+}
+.modal h3{
+	font-family: 'Work Sans';
+	font-size: 26px;
+	font-weight: 400;
+}
+.cross-modal{
+	display: flex;
+	justify-content: end;
+	padding-right: 25px;
+	padding-top: 20px;
+}
+
+.addPic {
+	width: 420px;
+	height: 169px;
+	background-color: #E8F1F6;
+}
+
+dialog::backdrop{
+	background: #0000004D;
 }
 
 

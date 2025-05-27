@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-	<div class="edition edit hidden">Mode édition</div>
+	<div class="edition admin hidden">Mode édition</div>
 	<div class="header">
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
@@ -24,7 +24,7 @@
 			<li>projets</li>
 			<li>contact</li>
 			<li class="login" ><a href="login.html">login</a> </li>
-			<li class="logout edit hidden">logout</li>
+			<li class="logout admin hidden">logout</li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -43,16 +43,25 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2 id="projetsTitle">Mes Projets<button class="modifier edit hidden"><i class="fa-regular fa-pen-to-square projet-icon edit hidden"></i>modifier</button></h2>
+		<h2 id="projetsTitle">Mes Projets<button class="modifier admin hidden"><i class="fa-regular fa-pen-to-square projet-icon admin hidden"></i>modifier</button></h2>
 		<div class="gallery">
-			<dialog class="modal">
-				<h3>Galerie photo</h3>
-				<div class="galleryModal">
+			<dialog closedby="any" class="modal">
+				<i class="cross-modal fa-solid fa-xmark"></i>
+				<div class="modalDiv">
+					<h3 class="noAdd">Galerie photo</h3>
+					<h3 class="add hidden">Ajout photo</h3>
+					<div class="galleryModal"></div>
+					<div class="addPic add hidden"></div>
+					<form class="add hidden">
+						<label for="title" name="title" id="title">Titre</label>
+						<input type="text" name="title" id="title">
+						<label for="category" name="category" id="category">Catégorie</label>
+						<select class="selectCategory" name="category" id="category"></select>
+					</form>
+					<button class="btnModal noAdd">Ajouter une photo</button>
+					<button class="btnModal add hidden">Valider</button>
 				</div>
-				<form>
-					<button method="dialog" class="btnModal">Ajouter une photo</button>
-				</form>
-			  </dialog>
+			</dialog>
 		</div>
 	</section>
 	<section id="contact">
