@@ -8,9 +8,11 @@ function postLogin() {
         } 
 
         const login = {
-            email: document.querySelector("[name=email").value,
+            email: document.querySelector("[name=email]").value,
             password: document.querySelector("[name=psw]").value,
         }
+
+
         
 
         const body = JSON.stringify(login);
